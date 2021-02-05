@@ -8,24 +8,43 @@
   <title>Calculate input score</title>
 
   <script type="text/javascript">
-    var array=[];
-    function add_scores() {
+
+  var array=[];
+
+  function add_scores() {
+    //  Show the last score entered.
+
     var score = parseInt(document.getElementById('score').value);
     if (score >= 0 & score <= 100){
-      document.getElementById('added').innerHTML = score;
+      array.push(score);
+      last_score = array[array.length - 1];
+      document.getElementById('added').innerHTML = last_score;
+    }
+
+    else {
+    //  An alert prompt will pop up if the user typed incorrect range of data in the textbox.
+      alert("Please type the correct score (0 ~ 100) in the text area and press the 'Add a Score' button!")
     }
   }
 
   function show_scores() {
+    // Show all scores.
+
     var score = parseInt(document.getElementById('score').value);
     if (score >= 0 & score <= 100){
-        array.push(score);
-        var formattedarray = array.join(', ');
-        document.getElementById('display').innerHTML = formattedarray;
+        var show = array.join(', ');
+        document.getElementById('display').innerHTML = show;
+    }
+
+    else {
+    //  An alert prompt will pop up if the user typed incorrect range of data in the textbox.
+      alert("Please type the correct score (0 ~ 100) in the text area and press the 'Add a Score' button!")
     }
   }
 
   function total_score() {
+    //  Calculate total score.
+
     var score = parseInt(document.getElementById('score').value);
     if (score >= 0 & score <= 100){
         var total = 0;
@@ -34,18 +53,31 @@
         }
         document.getElementById('total').innerHTML = total;
     }
+
+    else {
+    //  An alert prompt will pop up if the user typed incorrect range of data in the textbox.
+
+      alert("Please type the correct score (0 ~ 100) in the text area and press the 'Add a Score' button!")
+    }
   }
 
-    function average_score() {
-      var score = parseInt(document.getElementById('score').value);
-      if (score >= 0 & score <= 100){
-          var total = 0;
-          for (var i = 0; i < array.length; i++){
-            total += array[i];
-          }
-          average = (total / array.length).toFixed(2);
-          document.getElementById('average').innerHTML = average;
-      }
+  function average_score() {
+    // Calculate average score.
+
+    var score = parseInt(document.getElementById('score').value);
+    if (score >= 0 & score <= 100){
+        var total = 0;
+        for (var i = 0; i < array.length; i++){
+          total += array[i];
+        }
+        average = (total / array.length).toFixed(2);
+        document.getElementById('average').innerHTML = average;
+    }
+
+    else {
+    //  An alert prompt will pop up if the user typed incorrect range of data in the textbox.
+      alert("Please type the correct score (0 ~ 100) in the text area and press the 'Add a Score' button!")
+    }
   }
   </script>
 
