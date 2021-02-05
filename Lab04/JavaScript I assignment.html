@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calculate input score</title>
+
+  <script type="text/javascript">
+    var array=[];
+    function add_scores() {
+    var score = parseInt(document.getElementById('score').value);
+    if (score >= 0 & score <= 100){
+      document.getElementById('added').innerHTML = score;
+    }
+  }
+
+  function show_scores() {
+    var score = parseInt(document.getElementById('score').value);
+    if (score >= 0 & score <= 100){
+        array.push(score);
+        var formattedarray = array.join(', ');
+        document.getElementById('display').innerHTML = formattedarray;
+    }
+  }
+
+  function total_score() {
+    var score = parseInt(document.getElementById('score').value);
+    if (score >= 0 & score <= 100){
+        var total = 0;
+        for (var i = 0; i < array.length; i++){
+          total += array[i];
+        }
+        document.getElementById('total').innerHTML = total;
+    }
+  }
+
+    function average_score() {
+      var score = parseInt(document.getElementById('score').value);
+      if (score >= 0 & score <= 100){
+          var total = 0;
+          for (var i = 0; i < array.length; i++){
+            total += array[i];
+          }
+          average = (total / array.length).toFixed(2);
+          document.getElementById('average').innerHTML = average;
+      }
+  }
+  </script>
+
+</head>
+
+<body>
+
+  <form name="Calculate score">
+      <label>Please input score: </label>
+      <input type="text" id="score" >
+      <input type="button" id="added1" value="Add a Score" onclick="add_scores();">
+      <br>
+
+      You've entered: <label id="added"></label>
+      <br>
+      <br>
+
+      <input type="button" id="display1" value="Display all scores" onclick="show_scores();">
+      <br>
+      <br>
+
+      You've entered these scores: <label id="display"></label>
+      <br>
+      <br>
+
+      <input type="button" id="total1" value="Calculate Score Total" onclick="total_score();">
+      <br>
+      <br>
+
+      The total input score is: <label id="total"></label>
+      <br>
+      <br>
+
+      <input type="button" id="average1" value="Calculate the Average" onclick="average_score();">
+      <br>
+      <br>
+
+      The average score is: <label id="average"></label>
+      <br>
+      <br>
+
+  </form>
+  <br>
+
+</body>
+</html>
