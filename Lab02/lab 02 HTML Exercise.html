@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lab 02 HTML Exercise</title>
+</head>
+<body>
+  <!-- content -->
+  <p>Contact Information</p>
+
+  <!-- Form -->
+  <form action="something.html" method="POST">
+    <label>Contact Name*</label>
+    <input type="text" name="firstname" placeholder="First name">
+    <input type="text" name="lastname" placeholder="Last name">
+    <br>
+    <br>
+    <label>Contact Number*</label>
+    <input type="number" name="contactnumber">
+    <br>
+    <br>
+    <label>Alternate Number</label>
+    <input type="number" name="altnumber">
+    <br>
+    <br>
+    <label>Email Address</label>
+    <input type="text" name = "email" placeholder="Email">
+    <br>
+    <br>
+    <label>Preferred Contact Time</label>
+    <select name="time" id="">
+      <option value="" disabled selected>Please select contact time</option>
+      <option value="morning">0900-1200</option>
+      <option value="afternoon">1300-1700</option>
+    </select>
+    <br>
+    <br>
+    <hr>
+
+    <p>Tutorial Information</p>
+    <label>Student Name</label>
+    <input type="text" name="studentname">
+    <br>
+    <br>
+    <label>Student Gender*</label>
+    <input type="radio" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" name="gender" value="female">
+    <label for="female">Female</label>
+    <br>
+    <br>
+    <label>Student's level</label>
+    <select name="studentslevel" id="">
+      <option value="" disabled selected>Select Student's level</option>
+      <option value="Form 1">Secondary 1</option>
+      <option value="Form 2">Secondary 2</option>
+      <option value="Form 3">Secondary 3</option>
+      <option value="Form 4">Secondary 4</option>
+      <option value="Form 5">Secondary 5</option>
+    </select>
+    <br>
+    <br>
+    <label>School Name</label>
+    <input type="text" name="schoolname">
+    <br>
+    <br>
+    <label>Education Program/Programs*</label>
+    <input type="checkbox" name="Program 1" value="IBDP">
+    <label for="Program 1" value="IBDP">IBDP</label>
+    <input type="checkbox" name="Program 2" value="GCE A-level">
+    <label for="Program 2" value="GCE A-level">GCE A-level</label>
+    <input type="checkbox" name="Program 3" value="SAT">
+    <label for="Program 3" value="IBDP">SAT</label>
+    <br>
+    <input type="checkbox" name="Program 4" value="ACT">
+    <label for="Program 4" value="ACT">ACT</label>
+    <input type="checkbox" name="Program 5" value="(i)GCSE">
+    <label for="Program 5" value="(i)GCSE">(i)GCSE</label>
+    <input type="checkbox" name="Program 6" value="AP">
+    <label for="Program 6" value="AP">SAT</label>
+    <br>
+    <input type="checkbox" name="Program 7" value="IELTS">
+    <label for="Program 7" value="IELTS">IELTS</label>
+    <input type="checkbox" name="Program 8" value="TOEFL">
+    <label for="Program 8" value="TOEFL">TOEFL</label>
+    <br>
+    <br>
+    <label>Tutoring Subjects*</label>
+    <textarea name="subjects" cols="30" row = "1" placeholder="Example: IGCSE Science, Maths"></textarea>
+    <br>
+    <br>
+    <label>Language of Tutoring</label>
+    <input type="checkbox" name="English" value="English">
+    <label for="English" value="English">English</label>
+    <input type="checkbox" name="Cantonese" value="Cantonese">
+    <label for="Cantonese" value="Cantonese">Cantonese</label>
+    <input type="checkbox" name="Mandarin" value="Mandarin">
+    <label for ="Mandarin" value="Mandarin">Mandarin</label>
+    <br>
+    <br>
+    <label>Preferred Starting Date</label>
+    <input type="date" name="startdate">
+    <br>
+    <br>
+    <label>Tutoring Term</label>
+    <select name="term" id="">
+      <option value="" disabled>Tutorial Term</option>
+      <option value="Term 1">Term 1</option>
+      <option value="Term 2">Term 2</option>
+    </select>
+    <br>
+    <br>
+    <label>Duration*</label>
+    <select name="Duration" id="">
+      <option value="" disabled>Please select duration</option>
+      <option value="1hr">1 hour</option>
+      <option value="1.5 hours">1.5 hours</option>
+      <option value="2 hours">2 hours</option>
+      <option value="2.5 hours">2.5 hours</option>
+      <option value="3 hours">3 hours</option>
+      <option value="Irregular">Irregular</option>
+    </select>
+    <br>
+    <br>
+    <label>Frequency*</label>
+    <select name="frequency" id="">
+      <option value="" disabled>Please select frequency</option>
+      <option value="1lperweek">1 lesson / week</option>
+      <option value="2lperweek">2 lessons / week</option>
+      <option value="3lperweek">3 lessons / week</option>
+      <option value="4lperweek">4 lessons / week</option>
+      <option value="5lperweek">5 lessons / week</option>
+      <option value="Irregular">Irregular</option>
+    </select>
+    <br>
+    <br>
+    <label>Available days for Tutoring</label>
+    <input type="checkbox" name="Monday" value="Monday">
+    <label for="Monday" value="Monday">Monday</label>
+    <input type="checkbox" name="Tuesday" value="Tuesday">
+    <label for="Tuesday" value="Tuesday">Tuesday</label>
+    <input type="checkbox" name="Wednesday" value="Wednesday">
+    <label for="Wednesday" value="Wednesday">Wednesday</label>
+    <input type="checkbox" name="Thursday" value="Thursday">
+    <label for="Thursday" value="Thursday">Thursday</label>
+    <input type="checkbox" name="Friday" value="Friday">
+    <label for="Friday" value="Friday">Friday</label>
+    <input type="checkbox" name="Saturday" value="Saturday">
+    <label for="Saturday" value="Saturday">Saturday</label>
+    <input type="checkbox" name="Sunday" value="Sunday">
+    <label for="Sunday" value="Sunday">Sunday</label>
+    <br>
+    <br>
+    <label>Tutorial District</label>
+    <select name="district" id="">
+      <option value="" disabled selected>Please select tutoring district</option>
+      <option value="kowloon">Kowloon</option>
+      <option value="nt">New Territories</option>
+      <option value="hkisland">Hong Kong Island</option>
+    </select>
+    <br>
+    <br>
+    <label>Tutoring Address*</label>
+    <textarea name="subjects" cols="20" row = "1" ></textarea>
+    <br>
+    <br>
+    <label>Tutoring Time*</label>
+    <input type="text"  name="time">
+    <br>
+    <br>
+    <label>Interested in group lessons?</label>
+    <input type="radio" name="yes" value="yes">
+    <label for="yes">Yes</label>
+    <input type="radio" name="1 on 1" value="1 on 1">
+    <label for="1 on 1">1 on 1</label>
+    <input type="radio" name="nop" value="nop">
+    <label for="nop">No preference</label>
+    <br>
+    <label>(tutoring fee is usually lower in group lessons)</label>
+    <br>
+    <br>
+    <label>Tutoring Hourly Rate</label>
+    <select name="rate" id="">
+      <option value="" disabled selected>Please select houtly rate</option>
+      <option value="$100/hr">$100/hr</option>
+      <option value="$150/hr">$150/hr</option>
+      <option value="$200/hr">$200/hr</option>
+      <option value="$250/hr">$250/hr</option>
+      <option value="$300/hr">$300/hr</option>
+      <option value="$350/hr">$350/hr</option>
+      <option value="Negotiable">Negotiable</option>
+    </select>
+    <br>
+    <br>
+    <hr>
+
+    <label>Other Information</label>
+    <br>
+    <br>
+    <label>How to find us</label>
+    <select name="find" id="">
+      <option value="" disabled selected>How do you find us?</option>
+      <option value="Word of mouth">Word of mouth</option>
+      <option value="Google Search">Google Search</option>
+      <option value="Yahoo Search">Yahoo Search</option>
+      <option value="Forum">Forum</option>
+      <option value="Others">Others</option>
+    </select>
+    <br>
+    <br>
+    <label>Keyword to find us</label>
+    <input type="text" name="Keyword">
+    <br>
+    <br>
+    <label>Remarks</label>
+    <textarea name="Remarks" rows="8" cols="50"></textarea>
+    <br>
+    <br>
+    <input type="submit" name="submit" value="Submit">
+  </form>
+</body>
+</html>
