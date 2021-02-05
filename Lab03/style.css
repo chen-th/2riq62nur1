@@ -1,0 +1,63 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: black;
+}
+
+#page {
+  background-color: black;
+  width: 900px;
+  margin: auto;
+}
+
+header{
+  width: 900px;
+  height: 120px;
+}
+
+#main {
+  background-color: lightblue;
+}
+
+nav {
+  width: 150px;
+  float: left;
+  line-height: 22px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#content {
+  background-color: white;
+  width: 710px;
+  float: right;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+footer{
+  background-color: navy;
+  clear:left;
+  clear: right;
+  text-align: right;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+a {
+  colour:blue;
+  text-decoration: none;
+}
+
+a:visited {
+  color: green;
+}
+
+p{
+  font-size: 16;
+
+}
